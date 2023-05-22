@@ -36,7 +36,7 @@ const Popup = ({closePopup, title, cart, onDeleteItem}) => {
             <button onClick={()=>callbacks.closePopup()}>Закрыть</button>
           </div>
         </div>
-		<div class="popup__margin-top"></div>
+		<div className="popup__margin-top"></div>
 			<List list={cart.cartList}
 						buttonName = 'Удалить'
 				buttonClickAction ={callbacks.onDeleteItem}
