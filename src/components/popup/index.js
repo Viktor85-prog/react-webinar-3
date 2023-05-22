@@ -29,19 +29,21 @@ const Popup = ({closePopup, title, cart, onDeleteItem}) => {
       onClick={handleClosePopupOverly}
       aria-label='закрыть модальное окно'
     >
-      <div className='popup-wrapper'>
+      <div className='popup__wrapper'>
         <div className='popup__header'>
           <h2 className='popup__title'>{title}</h2>
           <div className='popup__button'>
             <button onClick={()=>callbacks.closePopup()}>Закрыть</button>
           </div>
         </div>
-		<List list={cart.cartList}
-	  		buttonName = 'Удалить'
-			buttonClickAction ={callbacks.onDeleteItem}
-			isCartItem={true}
-			totalPrice={cart.totalPrice}
-        />
+		<div class="popup__margin-top"></div>
+			<List list={cart.cartList}
+						buttonName = 'Удалить'
+				buttonClickAction ={callbacks.onDeleteItem}
+				isCartItem={true}
+				totalPrice={cart.totalPrice}
+			/>
+		<div className="popup__margin-bottom"></div>
       </div>
     </div>
   );

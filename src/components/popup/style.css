@@ -1,4 +1,4 @@
-.popup-wrapper {
+.popup__wrapper {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -33,7 +33,7 @@
 	justify-content: space-between;
 	padding: 20px 32px 23px 20px;
 	background: #F5F5F5;
-	border-radius: 10px;
+	border-radius:  10px 10px 0 0;
 	text-align: center;
 	align-items: center;
   }
@@ -70,7 +70,7 @@
 	color: #000000;
   }
   
-  .popup__margin {
+  .popup__margin-top {
 	margin-top: 67px;
 	border-bottom: 1px dashed #ccc;
   }
@@ -80,7 +80,7 @@
   }
   
   .popup__margin-bottom {
-	margin-bottom: 70px;
+	margin-bottom: 130px;
   }
   
   @media (max-width: 600px) {
