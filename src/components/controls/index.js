@@ -12,7 +12,7 @@ function Controls({cart, onOpenPopup}){
         {
           uniqAmount 
           ? <div>
-              {`${uniqAmount} ${plural(uniqAmount, {one: 'товар', few: 'товара', many: 'товаров'})} / ${cart.totalPrice}  ₽`}
+              {`${uniqAmount} ${plural(uniqAmount, {one: 'товар', few: 'товара', many: 'товаров'})} / ${cart.totalPrice.toLocaleString()}  ₽`}
             </div>
           : <div>пусто</div>
         }

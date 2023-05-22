@@ -15,7 +15,7 @@ function List({list, buttonClickAction, buttonName,isCartItem = false, totalPric
 		  />
         </div>
       )}
-	  {isCartItem && <div className='List-total'><span className='mr-70'>Итого</span> {`${totalPrice}  ₽`}</div>}
+	  {isCartItem && <div className='List-total'><span className='mr-70'>Итого</span> {`${totalPrice.toLocaleString()}  ₽`}</div>}
     </div>
   )
 }

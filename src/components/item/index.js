@@ -19,9 +19,9 @@ function Item({item, buttonClickAction, buttonName, isCartItem}){
         {item.title}
       </div>
 	  <div className='Item-price'>
-          {`${(item.price)}  ₽`}
+          {`${(item.price.toLocaleString())}  ₽`}
       </div>
-	  {isCartItem && <div className='Item-count'>{`${item.count} шт`}</div>}
+	  {isCartItem && <div className='Item-count'>{`${item.count.toLocaleString()} шт`}</div>}
       <div className='Item-actions'>
         <button onClick={(e)=>callbacks.onItemAction(e, item.code)}>
           {buttonName}
