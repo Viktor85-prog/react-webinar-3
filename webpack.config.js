@@ -39,7 +39,7 @@ let config = {
     new HtmlWebPackPlugin({
       template: './index.html',
       filename: './index.html',
-      title: 'Simple SPA',
+      title: 'Simple SPA app',
       base: '/',
     }),
   ],
